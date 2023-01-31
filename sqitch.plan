@@ -31,3 +31,4 @@ master.client_user 2023-01-31T05:50:34Z prashantzanjugade <prashant.zanjugade@ba
 master.user_page_permission 2023-01-31T05:54:38Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.user_page_permission
 user_history 2023-01-31T05:57:35Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table user_history
 master.client_contact 2023-01-31T06:01:17Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.client_contact
+login_history 2023-01-31T06:05:20Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table login_history
