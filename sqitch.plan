@@ -24,4 +24,5 @@ master.playout 2023-01-31T05:22:06Z prashantzanjugade <prashant.zanjugade@barcin
 master.groups 2023-01-31T05:27:38Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.groups
 master.sub_group 2023-01-31T05:29:52Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.sub_group
 master.account_manager 2023-01-31T05:32:12Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.account_manager
+master.client 2023-01-31T05:37:16Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.client
 master.group_advertiser 2023-01-31T05:34:40Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.group_advertiser
