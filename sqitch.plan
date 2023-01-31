@@ -17,3 +17,4 @@ master.advertisinggroup 2023-01-31T04:41:48Z prashantzanjugade <prashant.zanjuga
 master.descriptor 2023-01-31T04:45:36Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.descriptor
 master.programgenre 2023-01-31T04:47:54Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.programgenre
 master.advertiser 2023-01-31T04:50:37Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.advertiser
+master.channel 2023-01-31T04:52:57Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.channel
