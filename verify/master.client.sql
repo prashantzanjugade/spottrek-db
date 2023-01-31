@@ -8,7 +8,7 @@ select
   group_id,
   sub_group_id,
   client_type, -- broadcaster, agency, advertiser, other
-  spots bigint,
+  spots,
   account_manager_id,
   finance_code,
   address,

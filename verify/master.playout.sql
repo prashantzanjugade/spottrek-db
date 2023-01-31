@@ -49,7 +49,7 @@ select
   combinedcountinbreak,
   promoprogramstarttime,
   commercialprogramstarttime,
-  spotid bigint,
+  spotid,
   lastmodifieddate
   adbreakcode,
   promobroadcastercode,
