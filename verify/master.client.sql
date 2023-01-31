@@ -21,7 +21,7 @@ select
   status, -- 1 for active, 0 for inactive,
   suspend_date,
   modified_on,
-  modified_by,
+  modified_by
 from master.client
 where false;
 
