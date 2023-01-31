@@ -27,3 +27,5 @@ master.account_manager 2023-01-31T05:32:12Z prashantzanjugade <prashant.zanjugad
 master.users 2023-01-31T05:43:10Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.users
 master.client 2023-01-31T05:37:16Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.client
 master.group_advertiser 2023-01-31T05:34:40Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.group_advertiser
+master.client_user 2023-01-31T05:50:34Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.client_user
+master.user_page_permission 2023-01-31T05:54:38Z prashantzanjugade <prashant.zanjugade@barcindia.co.in> # Create Table master.user_page_permission
