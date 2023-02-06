@@ -2,12 +2,27 @@
 
 BEGIN;
 
+/*
 select
   brandname,
   brandnamecode,
   brandsectorcode,
   brandcategorycode,
   advertisercode,
+  descriptorcode,
+  brandtype,
+  created_on
+from master.brand
+where false;
+*/
+
+select
+  id,
+  brandname,
+  brandnamecode,
+  brandsectorcode,
+  brandcategorycode,
+  advertiser_id,
   descriptorcode,
   brandtype,
   created_on

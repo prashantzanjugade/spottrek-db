@@ -2,6 +2,7 @@
 
 BEGIN;
 
+/*
 select
   broadcastercode,
   contenttypecode,
@@ -59,6 +60,58 @@ select
   splitregion,
   splitplatform,
   prodhouse,
+  created_on
+from master.playout
+where false;
+*/
+
+select
+  id,
+  broadcastercode,
+  contenttypecode,
+  channelcode,
+  title,
+  titlecode,
+  contentlanguagecode,
+  telecastdate,
+  telecastday,
+  telecaststarttime,
+  telecastendtime,
+  telecastduration,
+  descriptorcode,
+  breaknumber,
+  positioninbreak,
+  countinbreak,
+  durationinbreak,
+  breakduration,
+  countperprogram,
+  durationperprogram,
+  totalbreakcountperprogram,
+  totalbreakdurationperprogram,
+  promocategorycode,
+  promosponsorname,
+  programsegmentnumber,
+  numberofsegmentsinprogram,
+  productservicenamecode,
+  subbrandnamecode,
+  sport,
+  originalorrepeat,
+  live,
+  combinedpositioninbreak,
+  combinedcountinbreak,
+  programstarttime,
+  spotid,
+  lastmodifieddate,
+  adbreakcode,
+  beam,
+  split,
+  market,
+  splitregion,
+  splitplatform,
+  prodhouse,
+  brand_id,
+  program_id,
+  advertiser_id,
   created_on
 from master.playout
 where false;

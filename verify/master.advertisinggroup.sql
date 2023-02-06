@@ -2,11 +2,13 @@
 
 BEGIN;
 
+/*
 select
   advertisinggroup,
   advertisinggroupcode,
   created_on
 from master.advertisinggroup
 where false;
+*/
 
 ROLLBACK;

@@ -2,6 +2,7 @@
 
 BEGIN;
 
+/*
 create table master.playout (
 	  broadcastercode integer,
 	  contenttypecode integer,
@@ -69,6 +70,65 @@ create table master.playout (
 	  foreign key (programgenrecode) references master.programgenre (programgenrecode),
 	  foreign key (brandnamecode) references master.brand (brandnamecode),
 	  foreign key (advertisercode) references master.advertiser (advertisercode)
+);
+*/
+
+create table master.playout (
+	  id bigserial,
+	  broadcastercode integer,
+	  contenttypecode integer,
+	  channelcode integer,
+	  title text,
+	  titlecode integer,
+	  contentlanguagecode integer,
+	  telecastdate date,
+	  telecastday text,
+	  telecaststarttime time,
+	  telecastendtime time,
+	  telecastduration time,
+	  descriptorcode integer,
+	  breaknumber integer,
+	  positioninbreak integer,
+	  countinbreak integer,
+	  durationinbreak text,
+	  breakduration text,
+	  countperprogram integer,
+	  durationperprogram text,
+	  totalbreakcountperprogram integer,
+	  totalbreakdurationperprogram integer,
+	  promocategorycode integer,
+	  promosponsorname text,
+	  programsegmentnumber integer,
+	  numberofsegmentsinprogram integer,
+	  productservicenamecode integer,
+	  subbrandnamecode integer,
+	  sport text,
+	  originalorrepeat text,
+	  live text,
+	  combinedpositioninbreak integer,
+	  combinedcountinbreak integer,
+	  programstarttime time,
+	  spotid text,
+	  lastmodifieddate date,
+	  adbreakcode text,
+	  beam text,
+	  split text,
+	  market text,
+	  splitregion text,
+	  splitplatform text,
+	  prodhouse text,
+	  brand_id integer,
+	  program_id integer,
+	  advertiser_id integer,
+	  created_on timestamp default current_timestamp,
+	  primary key (id),
+	  foreign key (contenttypecode) references master.contenttype (contenttypecode),
+	  foreign key (channelcode) references master.channel (channelcode),
+	  foreign key (contentlanguagecode) references master.contentlanguage (contentlanguagecode),
+	  foreign key (descriptorcode) references master.descriptor (descriptorcode),
+	  foreign key (advertiser_id) references master.advertiser (id),
+	  foreign key (brand_id) references master.brand (id),
+	  foreign key (program_id) references master.program (id)
 );
 
 COMMIT;

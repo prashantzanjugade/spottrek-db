@@ -2,6 +2,7 @@
 
 BEGIN;
 
+/*
 create table master.advertiser (
 	  advertiser text,
 	  advertisercode integer,
@@ -9,6 +10,17 @@ create table master.advertiser (
 	  created_on timestamp default current_timestamp,
 	  primary key (advertisercode),
 	  foreign key (advertisinggroupcode) references master.advertisinggroup (advertisinggroupcode)
+);
+*/
+
+create table master.advertiser (
+	  id serial,
+	  advertiser text,
+	  advertisercode integer,
+	  advertisinggroup text,
+	  advertisinggroupcode integer,
+	  created_on timestamp default current_timestamp,
+	  primary key (id)
 );
 
 COMMIT;
