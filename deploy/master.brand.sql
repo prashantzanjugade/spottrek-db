@@ -34,7 +34,7 @@ create table master.brand (
 	  foreign key (brandsectorcode) references master.brandsector (brandsectorcode),
 	  foreign key (brandcategorycode) references master.brandcategory (brandcategorycode),
 	  foreign key (advertiser_id) references master.advertiser (id),
-	  foreign key (descriptorcode) references master.descriptor (descriptorcode)
+	  foreign key (descriptorcode) references master.descriptor (id)
 );
 
 comment on column master.brand.brandtype is '0 for brand, 1 for promo';

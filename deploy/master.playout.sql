@@ -125,7 +125,7 @@ create table master.playout (
 	  foreign key (contenttypecode) references master.contenttype (contenttypecode),
 	  foreign key (channelcode) references master.channel (channelcode),
 	  foreign key (contentlanguagecode) references master.contentlanguage (contentlanguagecode),
-	  foreign key (descriptorcode) references master.descriptor (descriptorcode),
+	  foreign key (descriptorcode) references master.descriptor (id),
 	  foreign key (advertiser_id) references master.advertiser (id),
 	  foreign key (brand_id) references master.brand (id),
 	  foreign key (program_id) references master.program (id)

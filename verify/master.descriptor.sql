@@ -3,6 +3,7 @@
 BEGIN;
 
 select
+  id,
   descriptor,
   descriptorcode,
   created_on

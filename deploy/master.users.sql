@@ -13,7 +13,7 @@ create table master.users (
 	  created_on timestamp default now(),
 	  created_by integer not null,
 	  modified_on timestamp,
-	  modified_by integer not null,
+	  modified_by integer,
 	  primary key (id),
 	  foreign key (user_type) references master.user_type (id)
 );
