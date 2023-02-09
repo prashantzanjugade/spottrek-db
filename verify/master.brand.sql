@@ -23,7 +23,7 @@ select
   brandsectorcode,
   brandcategorycode,
   advertiser_id,
-  descriptorcode,
+  descriptor_id,
   brandtype,
   created_on
 from master.brand

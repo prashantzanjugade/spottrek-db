@@ -30,6 +30,7 @@ create table master.program (
 	  prodhouse integer,
 	  created_on timestamp default current_timestamp,
 	  primary key (id),
+	  UNIQUE(channelcode,titlecode),
 	  foreign key (channelcode) references master.channel (channelcode),
 	  foreign key (programthemecode) references master.programtheme (programthemecode),
 	  foreign key (programgenrecode) references master.programgenre (programgenrecode)

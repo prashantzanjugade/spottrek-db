@@ -27,14 +27,15 @@ create table master.brand (
 	  brandsectorcode integer,
 	  brandcategorycode integer,
 	  advertiser_id integer,
-	  descriptorcode integer,
+	  descriptor_id integer,
 	  brandtype integer, -- 0 for brand, 1 for promo
 	  created_on timestamp default current_timestamp,
 	  primary key (id),
-	  foreign key (brandsectorcode) references master.brandsector (brandsectorcode),
+	  UNIQUE (brandnamecode, descriptor_id),
+          foreign key (brandsectorcode) references master.brandsector (brandsectorcode),
 	  foreign key (brandcategorycode) references master.brandcategory (brandcategorycode),
 	  foreign key (advertiser_id) references master.advertiser (id),
-	  foreign key (descriptorcode) references master.descriptor (id)
+	  foreign key (descriptor_id) references master.descriptor (id)
 );
 
 comment on column master.brand.brandtype is '0 for brand, 1 for promo';
