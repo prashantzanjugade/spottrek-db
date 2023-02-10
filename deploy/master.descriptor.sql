@@ -16,7 +16,8 @@ create table master.descriptor (
 	  descriptor text,
 	  descriptorcode integer,
 	  created_on timestamp default current_timestamp,
-	  primary key (id)
+	  primary key (id),
+	  UNIQUE(descriptor,descriptorcode)
 );
 
 COMMIT;
