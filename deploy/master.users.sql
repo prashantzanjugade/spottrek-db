@@ -3,7 +3,7 @@
 BEGIN;
 
 create table master.users (
-	  id bigserial,
+	  id serial,
 	  name varchar(100) not null,
 	  username varchar(100) not null,
 	  email varchar(100) not null,
@@ -19,5 +19,9 @@ create table master.users (
 );
 
 comment on column master.users.status is '1 for active, 0 for inactive';
+
+INSERT INTO master.users ("name", username, email, user_type, created_by) VALUES
+('sysuser', 'sysuser', '', 1, 1),
+('superadmin', 'superadmin', '', 1, 1);
 
 COMMIT;

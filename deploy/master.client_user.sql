@@ -3,10 +3,10 @@
 BEGIN;
 
 create table master.client_user (
-         id bigserial,
+        id serial,
 	password varchar(255) not null,
 	client_id integer,
-	users_id bigint,
+	users_id integer,
 	is_all_advertiser boolean not null,
 	primary key (id),
 	foreign key (users_id) references master.users (id),

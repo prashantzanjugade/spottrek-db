@@ -6,9 +6,10 @@ select
   id,
   name,
   group_id,
-  sub_group_id,
+--sub_group_id,
   client_type, -- broadcaster, agency, advertiser, other
   spots,
+  consumed_spots,
   account_manager_id,
   finance_code,
   address,

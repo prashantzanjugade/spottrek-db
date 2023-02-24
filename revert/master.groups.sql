@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE master.groups;
+DROP TABLE master.group;
 
 COMMIT;

@@ -8,7 +8,8 @@ select
   networkcode,
   contentlanguagecode,
   regioncode,
-  programgenrecode,
+  genrecode,
+  genre,
   created_on
 from master.channel
 where false;

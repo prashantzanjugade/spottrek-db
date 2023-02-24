@@ -9,7 +9,7 @@ create table master.sub_group (
 	  created_on timestamp default now(),
 	--created_by integer,
   	  primary key (id),
-          foreign key (group_id) references master.groups (id)
+          foreign key (group_id) references master.group (id)
 );
 
 COMMIT;

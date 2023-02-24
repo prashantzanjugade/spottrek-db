@@ -3,12 +3,13 @@
 BEGIN;
 
 create table master.client (
-	  id bigserial,
+	  id serial,
 	  name varchar(100) not null,
 	  group_id integer not null,
-	  sub_group_id integer,
+	--sub_group_id integer,
 	  client_type integer not null, -- broadcaster, agency, advertiser, other
 	  spots bigint not null,
+	  consumed_spots bigint not null,
 	  account_manager_id integer not null,
 	  finance_code varchar(50) not null,
 	  address varchar(255) not null,
@@ -23,8 +24,8 @@ create table master.client (
 	  modified_on timestamp NULL,
 	  modified_by smallint,
 	  primary key (id),
-	  foreign key (group_id) references master.groups (id),
-	  foreign key (sub_group_id) references master.sub_group (id),
+	  foreign key (group_id) references master.group (id),
+	--foreign key (sub_group_id) references master.sub_group (id),
 	  foreign key (account_manager_id) references master.account_manager (id),
 	  foreign key (created_by) references master.users (id)
 );
