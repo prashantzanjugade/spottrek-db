@@ -11,7 +11,7 @@ create table master.group_advertiser (
 	  primary key (id),
 	  foreign key (group_id) references master.group (id),
 	  foreign key (advertiser_id) references master.advertiser (id),
-	  foreign key (created_by) references master.client(id)
+	  foreign key (created_by) references master.users(id)
 );
 
 COMMIT;

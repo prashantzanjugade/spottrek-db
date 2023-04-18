@@ -9,4 +9,6 @@ create table master.contenttype (
 	  primary key (contenttypecode)
 );
 
+INSERT INTO master.contenttype (contenttype, contenttypecode) VALUES ('Program', 101), ('Promo', 102), ('Commercial', 103), ('Feed Missing', 104), ('ICA', 105);
+
 COMMIT;

@@ -48,7 +48,7 @@ export to_path=/home/appuser/spot/spottrek-db
 export cd_path=spot/spottrek-db/
 export db_name=spottrek
 export db_user=spottrek
-export db_password=Sp0tt3k
+export db_password=spottrek
 """
 
 """
